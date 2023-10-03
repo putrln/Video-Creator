@@ -1,37 +1,32 @@
-# README
+# YouTube Caption Processor
 
-## Wprowadzenie
+## Introduction
 
-Ten program jest używany do pobierania napisów z filmów YouTube, tłumaczenia ich na język polski, generowania opisów obrazów i tworzenia plików audio, a następnie tworzenia pliku video z tych elementów.
+This software is designed to fetch captions from YouTube videos, translate them into Polish, generate image descriptions, produce audio files, and then assemble a video file from these components.
 
-## Wymagania
+## Requirements
 
-- C++17 lub nowszy
-- Biblioteka ffmpeg zainstalowana na systemie
+- C++17 or newer
+- ffmpeg library installed on the system
 
-## Sposób użycia
+## Usage
 
-1. Skompiluj program używając kompilatora obsługującego C++17 lub nowszy.
+1. Compile the software using a compiler that supports C++17 or newer.
 
-2. Uruchom program. Zostaniesz poproszony o wprowadzenie następujących danych:
+2. Run the program. You will be prompted to provide the following information:
 
-   - `Please enter GPT API Key:`: wprowadź swój klucz API dla OpenAI GPT.
-   - `Please enter Eleven Labs API Key:`: wprowadź swój klucz API dla Eleven Labs.
-   - `Please enter YouTube URL:`: wprowadź adres URL filmu YouTube, z którego chcesz pobrać napisy.
+   - `Please enter GPT API Key:`: Input your API key for OpenAI GPT.
+   - `Please enter Eleven Labs API Key:`: Input your API key for Eleven Labs.
+   - `Please enter YouTube URL:`: Input the URL of the YouTube video from which you wish to fetch captions.
 
-3. Po wprowadzeniu tych danych, program będzie działał automatycznie, wykonując następujące czynności:
+3. After entering this information, the program will operate automatically, performing the following tasks:
 
-   - pobieranie napisów z filmu YouTube
-   - tłumaczenie napisów na język polski
-   - generowanie propozycji opisów dla czterech obrazów
-   - generowanie obrazów na podstawie opisów
-   - tworzenie pliku audio z przetłumaczonym tekstem
-   - łączenie obrazów i audio w jeden plik wideo
+   - Fetching captions from the YouTube video
+   - Translating the captions into Polish
+   - Generating description suggestions for four images
+   - Producing images based on the descriptions
+   - Creating an audio file from the translated text
+   - Merging the images and audio into a single video file
 
-4. Gdy program zakończy działanie, powinieneś zobaczyć plik `result.mkv` w katalogu, z którego uruchomiono program. Ten plik jest wynikiem pracy programu.
+4. Once the program completes its operations, you should see a `result.mkv` file in the directory from which the program was run. This file is the output of the software's operations.
 
-## Uwaga
-
-Wszystkie klucze API są poufne i nie powinny być udostępniane osobom trzecim. Zawsze zachowaj ostrożność, przechowując i korzystając z kluczy API.
-
-Przy użyciu tego programu należy przestrzegać zasad korzystania z API OpenAI, Eleven Labs oraz zasady YouTube dotyczące pobierania napisów z filmów.
